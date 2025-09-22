@@ -2,6 +2,8 @@ package org.openstreetmap.josm.plugins.nl_brt.io;
 
 import org.openstreetmap.josm.gui.MainApplication;
 import org.openstreetmap.josm.plugins.nl_brt.BRTClient;
+import org.openstreetmap.josm.shared.nl_ogc.data.OgcLayerManager;
+import org.openstreetmap.josm.shared.nl_ogc.io.TaskStatus;
 
 import nl.pdok.ogc.brt.ApiException;
 import nl.pdok.ogc.brt.model.FeatureGeoJSONWaterdeelVlak;
@@ -34,7 +36,7 @@ public class WaterdeelVlakDownloader extends AbstractFeatureDownloader<FeatureGe
     @Override
     public void addToOsm(FeatureGeoJSONWaterdeelVlak feature) {
         var geometry = feature.getGeometry().getActualInstance();
-        var osmPrimitive = getPrimitiveFactory().createPrimitive(geometry, false);
+        var osmPrimitive = getPrimitiveFactory().createAreaPrimitive(geometry, false);
         osmPrimitive.put("source", "NL:BRT");
         osmPrimitive.put("ref:NL:BRT", feature.getProperties().getLokaalId());
         var type = feature.getProperties().getTypewater();

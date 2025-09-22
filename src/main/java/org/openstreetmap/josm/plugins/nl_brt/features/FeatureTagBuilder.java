@@ -27,7 +27,7 @@ public class FeatureTagBuilder {
         }
         else {
             if (unknownFeatureTypes.add(featureTags)) {
-                Logging.info("Unknown type: {}:{}:{}:{}", feature,
+                Logging.info("Unknown type: {0}:{1}:{2}:{3}", feature,
                         Objects.requireNonNullElse(featureTags.getType(), ""), 
                         Objects.requireNonNullElse(featureTags.getFunctie(), ""), 
                         Objects.requireNonNullElse(featureTags.getFunctioneelVoorkomen(), ""));
