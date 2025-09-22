@@ -1,0 +1,14 @@
+feature,type,functie,fysiekvoorkomen,key,value
+waterdeelVlak,"meer, plas",haven,,natural,water
+waterdeelVlak,"meer, plas",haven,,landuse,harbour
+waterdeelVlak,"meer, plas",haven,,harbour,yes
+waterdeelVlak,waterloop,overig,,natural,water
+waterdeelVlak,"meer, plas",overig,,natural,water
+waterdeelVlak,droogvallend,,,natural,water
+waterdeelVlak,droogvallend (LAT),,,natural,water
+waterdeelVlak,overig,,,natural,water
+waterdeelVlak,zee,,,natural,water
+waterdeelVlak,droogvallend,,,intermittend,yes
+waterdeelVlak,droogvallend (LAT),,,intermittend,yes
+waterdeelVlak,"greppel, droge sloot",,,water,ditch
+waterdeelVlak,"greppel, droge sloot",,,intermittend,yes
